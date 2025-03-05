@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, CheckCircle, Award, DollarSign, Users, ShieldPlus,  } from 'lucide-react';
+import { Leaf, CheckCircle, Award, DollarSign, Users, ShieldPlus } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const reasons = [
@@ -36,11 +36,18 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-2">
           Why Choose Green Satva?
         </h2>
+
+        {/* Leaf Icon Line Below Title */}
+        <div className="flex items-center justify-center mb-12">
+          <span className="w-12 h-[2px] bg-green-800"></span>
+          <i className="fa fa-leaf text-green-800 mx-2 text-sm"></i>
+          <span className="w-12 h-[2px] bg-green-800"></span>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (

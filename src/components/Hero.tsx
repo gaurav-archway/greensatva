@@ -1,6 +1,12 @@
 import React from 'react';
+import ImageCarousel from './ImageCarousel';
 
 const Hero = () => {
+  const carouselImages = [
+    "/images/img1.png",
+    "/images/img2.png"
+  ];
+  
   return (
     <div 
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
@@ -9,16 +15,14 @@ const Hero = () => {
       }}
     >
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-4xl font-bold text-green-800 mb-2">
-          Waste Management in Food & Crops.
-        </h1>
-        <h2 className="text-3xl md:text-4xl font-medium text-green-800 mb-5">
-          A Green Solution... Everything about Organic
-        </h2>
         
         <div className="flex justify-center mb-12">
           {/* <Leaf className="h-16 w-16 md:h-24 md:w-24 text-green-600" /> */}
           {/* <img src="/images/logo.svg" alt="Green Satva Logo" className="h-16 w-auto" /> */}
+        </div>
+
+        <div className="mb-12">
+          <ImageCarousel images={carouselImages}/>
         </div>
         
         <div className="max-w-3xl mx-auto">
