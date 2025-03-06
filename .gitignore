@@ -1,0 +1,63 @@
+dist
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+/dist
+/build
+/out
+
+# Ignore OS-specific files
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore temporary files
+*.swp          # vim swap files
+*.swo          # vim swap files
+*.bak          # backup files
+*.tmp          # temporary files
+
+# Ignore npm package-lock file (if you're not using it)
+package-lock.json
+
+# Ignore yarn.lock if you're not using Yarn
+yarn.lock
+
+# Ignore coverage reports
+coverage/
+
+# Ignore compiled files (Java)
+*.class
+*.jar
+*.war
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore temporary or compiled files (JavaScript)
+*.js.map
+
+# Ignore built application files
+*.exe
+*.dll
+*.so
+
+# Ignore test directories and files
+test/
+tests/
+
+# Ignore personal editor configuration files
+*.sublime-workspa
