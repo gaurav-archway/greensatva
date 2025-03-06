@@ -3,8 +3,8 @@ import ImageCarousel from './ImageCarousel';
 
 const Hero = () => {
   const carouselImages = [
-    "/images/img1.png",
-    "/images/img2.png"
+    "images/img1.png",
+    "images/img2.png"
   ];
   
   return (
